@@ -1,0 +1,19 @@
+/* reset style */
+body { margin: 0; }
+
+p {
+  font-size: 18px;
+  color: #3535cf;
+  text-indent: 2rem;
+  line-height: 1.5;
+}
+
+table, th, td {
+  border:1px solid #000;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+
