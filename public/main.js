@@ -10,6 +10,19 @@ function dir(obj) {
  * */
 function traverse(node, handler) {}
 
+const qs = {
+  /** @param {string} search */
+  parse(search) {
+    const queryPairs = search.split('&').map(item=>item.split('='))
+    return queryPairs.reduce((o, [k, v])=>{
+      o[k] = decodeURIComponent(v)
+      return o
+    }, {})
+  },
+  stringify() {
+
+  }
+}
 
 async function main() {
   const { history, navigator, document, location, screen } = window
@@ -103,14 +116,33 @@ async function main() {
 
   const thead = table.createTHead()
 
-  const result = window.confirm('Are you sure to delete it ?')
-
-  console.log(result)
+  // const result = window.confirm('Are you sure to delete it ?')
+  // console.log(result)
   
   editors.add(new Option('Linux', ''))
 
   console.log(forms[0].elements)
+  console.log(navigator.userAgent, location.protocol)
 
+  editors.addEventListener('change', ev=>{
+    ev.stopPropagation()
+    ev.preventDefault()
+
+    console.log(editors.selectedIndex)
+    console.log(ev.target.nodeName.toLowerCase(), ev.srcElement)
+
+
+  }, { capture:true })
+
+  console.log(qs.parse('p=63&spm_id_from=pageDriver&vd_source=c5793fe6ed2923e0fc34d937e1b17963'))
+  console.log(dir(screen))
+
+  img.onload = ()=>console.log('image load ...')
+
+  document.body.addEventListener('mousemove', ev=>{
+    const { screenX, clientX, offsetX } = ev
+
+  })
 
 }
 
