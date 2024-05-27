@@ -12,9 +12,12 @@
   <base href="" target="">
   <title>Soetas's resume</title>
   <script type="module" src="/main.js" defer></script>
+  <style>
+    
+  </style>
 </head>
 <body>
-  <!--  -->
+  <!-- noscript tag -->
   <noscript>
     <p>sorry, your browser does not yet support javascript scripting.</p>
   </noscript>
@@ -31,7 +34,8 @@
     non quasi fugit Omanis nero? Alias nisi gusto siliqua rem.
   </p>
 
-  <img src="./assets/cat.svg" alt="a pretty cat" width="300">
+  <img src="./assets/cat.svg" alt="a pretty cat" width="300" class="rounded-b bg-blue text-xl" 
+  data-src="https://ts1.cn.mm.bing.net/th/id/R-C.40dd0872389659671f6f640251896145?rik=6hYM9AqmVw8CHA&riu=http%3a%2f%2fn1.itc.cn%2fimg8%2fwb%2frecom%2f2016%2f06%2f26%2f146692286651284299.JPEG&ehk=99WJChLimjRk2mWr5gD3uSemFmWYgJC7PZr7XlnynQ4%3d&risl=&pid=ImgRaw&r=0">
 
   <a href="https://www.w3.org/" target="_blank"><abbr>w3c</abbr></a>
 
@@ -85,10 +89,25 @@
         <td>(1, 1)</td>
         <td>(1, 2)</td>
       </tr>
+      <tr>
+        <td>(2, 0)</td>
+        <td>(2, 1)</td>
+        <td>(2, 2)</td>
+      </tr>
+      <tr>
+        <td>(3, 0)</td>
+        <td>(3, 1)</td>
+        <td>(3, 2)</td>
+      </tr>
+      <tr>
+        <td>(4, 0)</td>
+        <td>(4, 1)</td>
+        <td>(4, 2)</td>
+      </tr>
     </tbody>
   </table>
 
-  <form action="" target="_blank">
+  <form action="" target="_blank" enctype="application/x-www-form-urlencoded">
     <fieldset>
       <legend>login</legend>
       <input type="text" name="account" id="account" autocomplete="on" placeholder="" autofocus>
@@ -96,13 +115,13 @@
       <select name="editor" id="">
         <option value="" disabled>select editor</option>
         <optgroup label="mac">
-          <option value="">vim</option>
-          <option value="">notepad++</option>
+          <option value="vim">vim</option>
+          <option value="notepad++">notepad++</option>
         </optgroup>
         <optgroup label="window">
-          <option value="">vscode</option>
-          <option value="">atom</option>
-          <option value="">sublime text</option>
+          <option value="vscode">vscode</option>
+          <option value="atom">atom</option>
+          <option value="sublime text">sublime text</option>
         </optgroup>
       </select>
     </fieldset>
