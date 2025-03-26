@@ -1,0 +1,30 @@
+{
+  "name":"Yaxing Son",
+  "avatar":"",
+  "about":"",
+  "position":"",
+  "birth":{
+    "year":2000,
+    "month":12
+  },
+  "location":"",
+  "experience":[
+    {
+      "company":"",
+      "position":"",
+      "description":""
+    }
+  ],
+  "education":[
+    {
+      "degree":"",
+      "description":""
+    }
+  ],
+  "skills":[
+
+  ],
+  "projects":[
+
+  ]
+}
