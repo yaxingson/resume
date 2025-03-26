@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "preview": "",
-    "export":""
+    "export":"node ./scripts/build.js"
   },
   "keywords": [],
   "author": "yaxingson <3228891558@qq.com>",
