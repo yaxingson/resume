@@ -33,11 +33,14 @@ async function render() {
   try {
     const content = await fs.readFile('./resume.toml', 'utf-8')
     const resumeJson = toml.parse(content)
-    const { error } = resumeSchema.validate(resumeJson)
+
+    console.log(resumeJson)
+
+    // const { error } = resumeSchema.validate(resumeJson)
     
-    if(error) {
-      throw new TypeError('resume schema validation failed!')
-    }
+    // if(error) {
+    //   throw new TypeError('resume schema validation failed!')
+    // }
 
     const compileFunc = pug.compileFile('./index.pug')
     const { css, resume } = await getTemplateData(resumeJson)

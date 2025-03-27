@@ -1,7 +1,61 @@
 [basics]
+name = "Yaxing Son"
+label = ""
+avatar = ""
+email = ""
+phone = ""
+url = ""
+
+[basics.location]
+country = ""
+city = ""
+
+[[basics.profiles]]
+network = "github"
+username = ""
+url = ""
+
+[[basics.profiles]]
+network = "twitter"
+username = ""
+url = ""
+
+[[basics.profiles]]
+network = "instagram"
+username = ""
+url = ""
+
+[[basics.profiles]]
+network = "youtube"
+username = ""
+url = ""
+
+[[basics.profiles]]
+network = "blog"
+username = ""
+url = ""
+
+[[skills]]
 
 
-[work]
+[[work]]
+name = ""
+position = ""
+startDate = 2000-01-21
+endDate = 2004-12-02
 
+[[work]]
+name = ""
+position = ""
+startDate = 2000-01-21
+endDate = 2004-12-02
 
-[education]
+[[education]]
+startDate = 2016-07-01
+endDate = 2020-09-30
+
+[[projects]]
+
+[[awards]]
+date = 1997-02-22
+awarder = ""

@@ -11,12 +11,13 @@
     "preview": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 nodemon ./serve.js",
     "export": "node ./scripts/build.js"
   },
+  "homepage":"https://github.com/yaxingson/resume",
   "bugs": {
     "url": "https://github.com/yaxingson/resume/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yaxingson/resume"
+    "url": "https://github.com/yaxingson/resume.git"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",

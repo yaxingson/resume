@@ -18,6 +18,6 @@ pnpm i
 
 pnpm preview
 
-pnpm export --format pdf,png
+pnpm export --format pdf,png --compress
 
 ```
