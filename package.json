@@ -19,6 +19,7 @@
     "url": "https://github.com/yaxingson/resume"
   },
   "dependencies": {
+    "@iarna/toml": "^2.2.5",
     "joi": "^17.13.3",
     "pdf-lib": "^1.17.1",
     "pdf-parse": "^1.1.1",

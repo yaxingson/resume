@@ -4,6 +4,7 @@ import http from 'node:http'
 import fs from 'node:fs/promises'
 import { createReadStream } from 'node:fs'
 import pug from 'pug'
+import toml from '@iarna/toml'
 import { fetchGithubData } from './utils.js'
 import resumeSchema from './resume-schema.js'
 
@@ -30,10 +31,10 @@ async function getTemplateData(resume) {
 
 async function render() {
   try {
-    const content = await fs.readFile('./resume.json', 'utf-8')
-    const resumeJson = JSON.parse(content)
+    const content = await fs.readFile('./resume.toml', 'utf-8')
+    const resumeJson = toml.parse(content)
     const { error } = resumeSchema.validate(resumeJson)
-
+    
     if(error) {
       throw new TypeError('resume schema validation failed!')
     }
