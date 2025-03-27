@@ -1,4 +1,4 @@
-async function fetchGithubData(name='yaxingson') {
+export async function fetchGithubData(name) {
   const url = `https://api.github.com/users/${name}`
   const data = await fetch(url).then(res=>res.json())
   const { blog } = data
@@ -12,8 +12,3 @@ async function fetchGithubData(name='yaxingson') {
     orgs:[]
   }
 }
-
-(async ()=>{
-  console.log(await fetchGithubData())
-
-})()
