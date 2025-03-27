@@ -1,6 +1,11 @@
 #!/usr/bin/env node
-async function buildHTML() {}
+"use strict"
+async function buildHTML() {
+  
+}
+
 async function buildPDF() {}
+
 async function buildPNG() {}
 
 function getExportFormats() {

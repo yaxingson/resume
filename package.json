@@ -1,21 +1,29 @@
 {
-  "name": "resume",
+  "name": "@yaxingson/resume",
   "version": "1.0.0",
-  "description": "",
-  "type":"module",
+  "author": "yaxingson <3228891558@qq.com>",
+  "description": "a resume generator",
+  "keywords": [],
+  "packageManager": "pnpm@9.2.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "preview": "",
-    "export":"node ./scripts/build.js"
+    "preview": "node ./serve.js",
+    "export": "node ./scripts/build.js"
   },
-  "keywords": [],
-  "author": "yaxingson <3228891558@qq.com>",
-  "license": "MIT",
+  "bugs":{
+    "url":"https://github.com/yaxingson/resume/issues"
+  },
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/yaxingson/resume"
+  },
   "dependencies": {
     "pug": "^3.0.3",
     "resume-schema": "^1.0.1"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
-  }
+  },
+  "license": "MIT"
 }
