@@ -1,5 +1,10 @@
 # Résumé
 
+## Feature
+
+- Suitable for web and mobile, support custom templates and skins.
+- Online QR code mobile preview.
+
 ## Usage
 
 1. clone 
