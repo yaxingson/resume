@@ -1,0 +1,36 @@
+summary = ""
+
+[basics]
+first_name = ""
+last_name = ""
+email = ""
+phone = ""
+
+[basics.location]
+country = ""
+city = ""
+
+[[experiences]]
+employer = ""
+role = ""
+start_date = ""
+end_date = ""
+work_description = []
+
+[skills]
+frontend = []
+backend = []
+devops = []
+
+[education]
+school = ""
+field_of_study = ""
+graduation_date = ""
+
+[[languages]]
+name = ""
+level = ""
+
+[[certificates]]
+
+[[awards]]
