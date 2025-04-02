@@ -29,7 +29,7 @@ async function getTemplateData(resume) {
   }
 }
 
-async function render() {
+async function render(path) {
   try {
     const content = await fs.readFile('./resume.toml', 'utf-8')
     const resumeJson = toml.parse(content)
@@ -42,7 +42,7 @@ async function render() {
     //   throw new TypeError('resume schema validation failed!')
     // }
 
-    const compileFunc = pug.compileFile('./index.pug')
+    const compileFunc = pug.compileFile(path)
     const { css, resume } = await getTemplateData(resumeJson)
 
     return compileFunc({
@@ -57,13 +57,21 @@ async function render() {
 const devServer = http.createServer(async (req, res)=>{
   const { url } = req
   if(url === '/') {
-    const data = await render()
+    const data = await render('./index.pug')
     const hasError = typeof data !== 'string'
 
     res.writeHead(200, {
       'content-type': hasError ? 'application/json' : 'text/html'
     })
     
+    res.end(hasError ? JSON.stringify(data) : data)
+  } else if(url.startsWith('/zh')) {
+    const data = await render('./zh/index.pug')
+    const hasError = typeof data !== 'string'
+
+    res.writeHead(200, {
+      'content-type': hasError ? 'application/json' : 'text/html'
+    })
     res.end(hasError ? JSON.stringify(data) : data)
   } else {
     const ext = url.split('.')[1]

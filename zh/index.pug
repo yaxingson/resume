@@ -1,0 +1,150 @@
+doctype html
+html(lang="zh-CN")
+  head
+    title= "孙亚星 - 简历"
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="keywords", content="简历, github, 个人简介, 求职简历")
+    meta(name="description", content="简历生成器")
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="/css/resume.css" media="all")
+    link(rel="stylesheet", href="/css/print.css" media="print")
+    //- script(src="https://cdn.tailwindcss.com")
+    script(src="/js/vendor/tailwindcss.js") 
+  body(class="bg-[#525659]")
+    noscript 您需要启用 JavaScript 才能生成和查看简历页面。
+    main
+      div(id="resume")
+        .page-1(class="mx-auto my-8 border bg-[#fff]")
+          section(class="text-center px-8 py-5")
+            div
+              h3(class="text-[44px] font-bold") 孙亚星
+              div(class="mt-2 opacity-75") Web 开发工程师
+            div(class="opacity-75 text-[14px] my-5")
+              a(class="underline decoration-dotted underline-offset-[3px]" href="") 3228891558@qq.com
+            div(class="social-links flex justify-center")
+              a(href="")
+                img(src="/icons/github.svg", title="GitHub")
+              a(href="")
+                img(src="/icons/twitter.svg", title="推特")
+              a(href="")
+                img(src="/icons/instagram.svg", title="Instagram")
+              a(href="")
+                img(src="/icons/blog.svg", title="博客")
+              a(href="")
+                img(src="/icons/linkedin.svg", title="领英") 
+          div(class="p-8")
+            section
+              div(class="title") 个人简介 
+              p(class="text-justify") 我是一名计算机科学专业的硕士生，同时也是一名自由职业软件工程师。我对软件的热情在于构思创意并通过优雅的界面将其实现。我非常注重用户体验、架构设计以及代码质量。
+            section
+              div(class="title") 技术栈
+              ul 
+                li
+                  span(class="font-bold inline-block w-[100px]") 前端
+                  span TypeScript、JavaScript、Vue、Nuxt、Vite
+                li(class="my-5")
+                  span(class="font-bold inline-block w-[100px]") 后端
+                  span Node、MongoDB、Sqlite、Serverless、Nginx、Docker
+                li 
+                  span(class="font-bold inline-block w-[100px]") 运维
+                  span Firebase、AWS、Azure、阿里云
+            section 
+              div(class="title") 项目经验
+              ul(class="list-disc list-inside")
+                li(class="mb-3")
+                  span Vitest：基于 Vite 的超快单元测试框架
+                  a(class="inline-block align-text-bottom")
+                    img(src="/icons/star.svg")
+                  span 10291
+                li(class="mb-3")
+                  span Vitest：为开发者打造的演示幻灯片
+                  a(class="inline-block align-text-bottom")
+                    img(src="/icons/star.svg")
+                  span 8912
+                li(class="mb-3")
+                  span Vitest：即时按需的原子化 CSS 引擎
+                  a(class="inline-block align-text-bottom")
+                    img(src="/icons/star.svg")
+                  span 1562
+                li(class="mb-3")
+                  span Vitest：Vue Composition API 实用工具集合
+                  a(class="inline-block align-text-bottom")
+                    img(src="/icons/star.svg")
+                  span 6701
+                li(class="mb-3")
+                  span Vitest：混合型 Vue(3) 框架
+                  a(class="inline-block align-text-bottom")
+                    img(src="/icons/star.svg")
+                  span 12181
+            section
+              div(class="title") 工作经历
+              ul
+                li(class="mb-5")
+                  p(class="flex items-center justify-between")
+                    span
+                      strong NuxtLabs
+                      span 软件工程师
+                    span 2021年9月 - 至今 | 远程
+                  ul(class="list-[square] list-inside mt-2")
+                    li 将 Vite 集成到 Nuxt 3 中，使开发时间提升了50倍。
+                    li 开发了 `unplugin`，统一了 Webpack 和 Vite 之间的 API。
+                    li 创建了 Vitest，改善了开发者的测试体验。
+                li(class="mb-5")
+                  p(class="flex items-center justify-between")
+                    span
+                      strong NuxtLabs 
+                      span 软件工程师
+                    span 2021年9月 - 至今 | 远程
+                  ul(class="list-[square] list-inside mt-2")
+                    li 将 Vite 集成到 Nuxt 3 中，使开发时间提升了50倍。
+                    li 开发了 `unplugin`，统一了 Webpack 和 Vite 之间的 API。
+                    li 创建了 Vitest，改善了开发者的测试体验。
+                li 
+                  p(class="flex items-center justify-between")
+                    span
+                      strong NuxtLabs 
+                      span 软件工程师
+                    span 2021年9月 - 至今 | 远程
+                  ul(class="list-[square] list-inside mt-2")
+                    li 将 Vite 集成到 Nuxt 3 中，使开发时间提升了50倍。
+                    li 开发了 `unplugin`，统一了 Webpack 和 Vite 之间的 API。
+                    li 创建了 Vitest，改善了开发者的测试体验。
+        .page-2(class="mx-auto my-8 border bg-[#fff]")
+          div(class="p-8")
+            section
+              div(class="title") 教育背景
+              ul 
+                li 
+                  p(class="flex items-center justify-between")
+                  span
+                    strong NuxtLabs 
+                    span 软件工程师
+                  span 2021年9月 - 至今 | 远程
+            section 
+                div(class="title") 获奖经历
+                ul
+                  li 
+                    p(class="flex items-center justify-between")
+                    span
+                      strong NuxtLabs 
+                      span 软件工程师
+                    span 2021年9月 - 至今 | 远程
+                  li 
+                    p(class="flex items-center justify-between")
+                    span
+                      strong NuxtLabs 
+                      span 软件工程师
+                    span 2021年9月 - 至今 | 远程
+                  li 
+                    p(class="flex items-center justify-between")
+                    span
+                      strong NuxtLabs 
+                      span 软件工程师
+                    span 2021年9月 - 至今 | 远程
+            section
+                div(class="title") 语言能力
+            div(class="text-center")
+              p
+                a(class="underline decoration-dotted underline-offset-[3px]" href="") PDF 版本
+              p 最后更新于 2022年8月2日 上午6:39:57。

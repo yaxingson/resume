@@ -1,1 +1,17 @@
+[class^=page] {
+  border: none;
+}
+
+body {margin: 0;}
+
+.page-1 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0;
+}
+
+.page-2 {
+  margin: 0 !important;
+}
+
 

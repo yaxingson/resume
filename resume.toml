@@ -1,61 +1,37 @@
+summary = ""
+
 [basics]
-name = "Yaxing Son"
-label = ""
-avatar = ""
+first_name = ""
+last_name = ""
 email = ""
 phone = ""
-url = ""
 
 [basics.location]
 country = ""
 city = ""
 
-[[basics.profiles]]
-network = "github"
-username = ""
-url = ""
+[[experiences]]
+employer = ""
+role = ""
+start_date = ""
+end_date = ""
+work_description = []
 
-[[basics.profiles]]
-network = "twitter"
-username = ""
-url = ""
+[skills]
+frontend = []
+backend = []
+devops = []
 
-[[basics.profiles]]
-network = "instagram"
-username = ""
-url = ""
+[education]
+school = ""
+field_of_study = ""
+graduation_date = ""
 
-[[basics.profiles]]
-network = "youtube"
-username = ""
-url = ""
-
-[[basics.profiles]]
-network = "blog"
-username = ""
-url = ""
-
-[[skills]]
-
-
-[[work]]
+[[languages]]
 name = ""
-position = ""
-startDate = 2000-01-21
-endDate = 2004-12-02
+level = ""
 
-[[work]]
-name = ""
-position = ""
-startDate = 2000-01-21
-endDate = 2004-12-02
-
-[[education]]
-startDate = 2016-07-01
-endDate = 2020-09-30
-
-[[projects]]
+[[certificates]]
 
 [[awards]]
-date = 1997-02-22
-awarder = ""
+
